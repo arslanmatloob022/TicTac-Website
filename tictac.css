@@ -1,0 +1,91 @@
+body{
+  background-image: url('images/volcano-1905556.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment:fixed ;
+}
+table {
+  box-shadow: 1px 1px 20px white;
+  border-collapse: collapse;
+  border: 8px solid brown;
+  border-style: groove;
+  /* border-radius: 15px; */
+  position: relative;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(180, 106, 8);
+  text-align: center;
+  vertical-align: middle;
+  border: 5px solid brown;
+}
+
+.p1 {
+  color: rgb(253, 253, 253);
+  font-size: 80px;
+}
+
+.p2 {
+  color: rgb(0, 0, 0);
+  font-size: 80px;
+}
+
+.win {
+  background-color: rgb(107, 67, 8);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 0;
+}
+.ttt{
+  color: brown;
+  text-shadow: 2px 2px 4px white;
+  font-weight: 900;
+  font-size: 44px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#reset {
+  border: 2px groove black;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 10px;
+  margin: 10px 40%;
+  padding: 16px 30px;
+  cursor: pointer;
+}
+.playerOne, .playerTwo{
+  display:none;
+}
+.playerOne.show, .playerTwo.show{
+  background-color: rgb(83, 81, 81);
+  border: 1px ridge bisque;
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  height: 180px;
+  z-index: 1000;
+  padding: 10px;
+}
+.playerOne img, .playerTwo img{
+  margin-top: 10%;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+  border: 2px ridge bisque;
+}
+.playerOne button, .playerTwo button{
+  border-radius: 5px;
+  padding: 4px 5px;
+  background-color: rgb(231, 231, 231);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
