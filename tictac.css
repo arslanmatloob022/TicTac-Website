@@ -1,8 +1,8 @@
-body{
-  background-image: url('images/volcano-1905556.jpg');
+body {
+  background-image: url("images/volcano-1905556.jpg");
   background-position: center;
   background-size: cover;
-  background-attachment:fixed ;
+  background-attachment: fixed;
 }
 table {
   box-shadow: 1px 1px 20px white;
@@ -35,7 +35,11 @@ td {
 .win {
   background-color: rgb(107, 67, 8);
 }
-
+.container-fluid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -43,12 +47,13 @@ td {
   flex-direction: column;
   z-index: 0;
 }
-.ttt{
+
+.ttt {
   color: brown;
   text-shadow: 2px 2px 4px white;
   font-weight: 900;
   font-size: 44px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #reset {
   border: 2px groove black;
@@ -59,10 +64,12 @@ td {
   padding: 16px 30px;
   cursor: pointer;
 }
-.playerOne, .playerTwo{
-  display:none;
+.playerOne,
+.playerTwo {
+  display: none;
 }
-.playerOne.show, .playerTwo.show{
+.playerOne.show,
+.playerTwo.show {
   background-color: rgb(83, 81, 81);
   border: 1px ridge bisque;
   border-radius: 10px;
@@ -75,17 +82,41 @@ td {
   z-index: 1000;
   padding: 10px;
 }
-.playerOne img, .playerTwo img{
+.playerOne img,
+.playerTwo img {
   margin-top: 10%;
   border-radius: 20px;
   width: 80px;
   height: 80px;
   border: 2px ridge bisque;
 }
-.playerOne button, .playerTwo button{
+.playerOne button,
+.playerTwo button {
   border-radius: 5px;
   padding: 4px 5px;
   background-color: rgb(231, 231, 231);
   color: rgb(0, 0, 0);
   cursor: pointer;
+}
+
+.Firstplayer,
+.Secondplayer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(182, 102, 11);
+  border: 2px ridge bisque;
+  border-radius: 10px;
+  width: 160px;
+  height: 180px;
+  z-index: 1000;
+  padding: 10px;
+}
+.Firstplayer img,
+.Secondplayer img {
+  margin-top: 10%;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+  border: 2px ridge bisque;
 }
