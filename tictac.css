@@ -68,6 +68,12 @@ table tr td {
 .playerTwo {
   display: none;
 }
+
+.playerOne h3,
+.playerTwo h3 {
+  font-size: 1rem;
+  text-align: center;
+}
 .playerOne.show,
 .playerTwo.show {
   background-color: rgb(83, 81, 81);
