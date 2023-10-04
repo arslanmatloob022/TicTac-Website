@@ -29,8 +29,8 @@ for (let i = 1; i <= 9; i++) {
   });
 }
 
-res = document.querySelector(".playerOne");
-res2 = document.querySelector(".playerTwo");
+res = document.querySelector(".playerTwo");
+res2 = document.querySelector(".playerOne");
 
 function checkWin() {
   for (let i = 0; i < winPos.length; i++) {
@@ -56,6 +56,19 @@ function checkWin() {
   }
 }
 
+var Xwinnings = 0;
+var Owinnings = 0;
+function winings() {
+  if (playerSymbol === "O") {
+    Xwinnings += 1;
+    document.getElementById("playerOneWins").innerHTML = Xwinnings;
+    document.getElementById("playerOneWinsAdd").innerHTML = Xwinnings;
+  } else {
+    Owinnings += 1;
+    document.getElementById("playerTwoWins").innerHTML = Owinnings;
+  }
+}
+
 function reset() {
   for (let i = 1; i <= 9; i++) {
     document.getElementById(i.toString()).innerHTML = "";
@@ -65,17 +78,5 @@ function reset() {
     gameEnded = false;
     res.classList.remove("show");
     res2.classList.remove("show");
-  }
-}
-
-var Xwinnings = 0;
-var Owinnings = 0;
-function winings() {
-  if (playerSymbol === "O") {
-    Xwinnings += 1;
-    document.getElementById("playerOneWins").innerHTML = Xwinnings;
-  } else {
-    Owinnings += 1;
-    document.getElementById("playerTwoWins").innerHTML = Owinnings;
   }
 }
